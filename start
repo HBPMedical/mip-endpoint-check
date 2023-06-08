@@ -1,0 +1,4 @@
+#!/bin/sh
+
+docker build -t mip-endpoint-check .
+docker run -v $(pwd)/logs:/logs mip-endpoint-check
